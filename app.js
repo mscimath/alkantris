@@ -19,7 +19,7 @@ const app = Vue.createApp({
                 const {lyrics} = await res.json()
                 this.lyrics = lyrics;
                 this.title = this.lyrics[0].title; //Set the first lyric's title
-                alert("uploaded!")
+                //alert("uploaded!")
             } catch (error) {
                 console.error('Error fetching items:', error);
             }           

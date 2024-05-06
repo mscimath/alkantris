@@ -12,9 +12,11 @@
             <img v-bind:class="gender" v-bind:src="picture" v-bind:alt="`${title} ${lastName}`" >
             <h1>{{title}} {{lastName}}</h1>
             <h3>Email: {{email}}</h3>
-           <!-- <p v-for="item in lyrics">
-                    {{ item.message }}
-            </p>-->
+            <div class="lyric">
+            <p class="lyric_line" v-if="lyrics[0].lyric.length > 0" v-for="item in lyrics[0].lyric">
+                    {{ item }}
+            </p>
+            </div>
             <button v-on:click="getSong()" :class="gender">Get Random Song</button>
         </div>
         <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>

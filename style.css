@@ -5,7 +5,8 @@
 }
 
 html, body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Noto Sans,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;
+    line-height: 1.5;
 }
 
 #app {
@@ -22,6 +23,17 @@ html, body {
 h1, h3 {
     margin-bottom: 1rem;
     font-weight: normal;
+}
+
+.lyric {
+    background-color: rgba(51, 51, 51, 0.2);
+    margin: 1rem;
+    padding: 1.7rem 3rem;
+    border-radius: 15px;
+}
+
+.lyric_line {
+    padding: 0.5rem
 }
 
 img {
